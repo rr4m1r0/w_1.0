@@ -1,0 +1,26 @@
+package window;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Ventana extends JFrame{
+
+	private JButton boton;
+	
+	public Ventana(){
+
+		super("Mi Window");
+		setLayout(new FlowLayout(FlowLayout.CENTER));
+		boton = new JButton("Click Me");
+		add(boton);
+		setSize(300,300);
+		setVisible(true);
+	}
+
+	public static void main(String[] args){
+
+		Ventana w = new Ventana();
+
+	}
+
+}
